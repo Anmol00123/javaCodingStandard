@@ -1,0 +1,39 @@
+Scanner sc = new Scanner(System.in);
+class Student
+{
+    int studentId;
+    String studentFirstName;
+    String studentLastName;
+
+ static void addId(int id)
+    {    
+        studentId=id;
+        System.out.println(studentId);    
+    }
+    static void addFirstName(String firstName)
+    {    
+        studentFirstName=firstName;
+        System.out.println(studentFirstName);    
+    }
+    static void addFirstName(String lastName)
+    {    
+        studentLastName=lastName;
+        System.out.println(studentLastName);    
+    }
+    public static void main(String[] args)
+    {
+        System.out.println("Enter the student id");
+        int id=sc.nextInt();
+        System.out.println("Enter the student first name");
+        String fname=sc.next();
+        System.out.println("Enter the student last name");
+        String lname=sc.next();
+
+ 
+
+        addId(id);        
+        addFirstName(fname);
+        addLastName(lname);
+
+    }
+}
